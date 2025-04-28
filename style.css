@@ -1,0 +1,334 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Kufi Arabic", Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: rgb(180, 244, 180);
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 23vh;
+    background-color: #548235;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    box-shadow: 5px 5px 10px 1px rgb(96, 186, 96);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Logo section */
+.logo-section img {
+    border-radius: 50%;
+}
+
+/* Navigation links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    margin-top: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    transition: color 0.5s;
+}
+
+nav ul li a:hover {
+    color: rgb(10, 83, 13);
+}
+
+/* Authentication buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.sign {
+    background-color: #c1f1b8;
+    color: #4d7737;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s, bottom 0.3s;
+    position: relative;
+}
+
+.sign:hover {
+    background-color: #a0da9a;
+    box-shadow: 3px 3px 4px #97b487;
+    bottom: 3px;
+}
+
+/* Hamburger Button */
+.hamburger {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+/* Main Content */
+.content {
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    color: #4d7737;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.description {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 550;
+}
+
+.courses {
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color: #4d7737;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: left;
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    justify-content: space-evenly; /* Ensures evenly distributed gaps */
+    flex-wrap: wrap; /* Maintains responsiveness */
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px; /* Adds consistent padding around container */
+}
+
+/* Individual Card */
+.card {
+    background: linear-gradient(to bottom, #b8e6b7 0%, #ffffff 100%);
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    /* width: 28%; */
+    min-width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #295d18;
+    margin-bottom: 10px;
+}
+
+.card h2 small {
+    font-size: 18px;
+    display: block;
+}
+
+.card p {
+    font-size: 16px;
+    color: #345634;
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 200px; /* Bigger Image */
+    height: auto;
+    margin: 0 auto 15px auto;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #000;
+    font-style: italic;
+}
+/* Make the whole card clickable */
+.card-link {
+    text-decoration: none; /* Remove blue underline */
+    color: inherit; /* Keep text colors same */
+    display: block;
+    width: 28%;
+    min-width: 280px;
+}
+
+.card-link:hover .card {
+    transform: translateY(-5px);
+}
+.grade{
+    background: linear-gradient(to bottom, #b8e6b7 0%, #ffffff 100%);
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    /* width: 28%; */
+    min-width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+    margin: 40px;
+}
+.grade-link{
+    text-decoration: none; /* Remove blue underline */
+    color: inherit; /* Keep text colors same */
+    display: block;
+    min-width: 280px;
+    
+}
+.grade-link:hover .grade {
+    transform: translateY(-5px);
+}
+/* Footer */
+footer {
+    background-color: #548235;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    border-radius: 50%;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #c1f1b8;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social p {
+    margin-bottom: 10px;
+}
+
+.footer-social a img {
+    width: 25px;
+    height: auto;
+    margin: 0 5px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 16px;
+}
+.footer-social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #c1f1b8;
+}
+
+
+
+/* Responsive Mobile View */
+@media (max-width: 992px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #548235;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .auth-buttons {
+        flex-direction: row;
+    }
+
+    .auth-buttons a {
+        font-size: 14px;
+    }
+}
